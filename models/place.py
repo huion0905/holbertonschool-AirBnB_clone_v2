@@ -1,7 +1,8 @@
 from models import storage
-from models.base_model import BaseModel, Base, Amenity
+from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String, Integer, Float, ForeignKey, Table
 from sqlalchemy.orm import relationship
+from models.amenity import Amenity
 
 class Place(BaseModel, Base):
     """ A place to stay """

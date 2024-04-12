@@ -3,13 +3,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 import os
-import sys
-
-
-sys.path.append(os.path.abspath('../../'))
-
-from models.state import State
-
 
 class DBStorage:
     """This class manages storage of hbnb models in the
